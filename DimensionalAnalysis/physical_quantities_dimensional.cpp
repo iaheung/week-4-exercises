@@ -12,12 +12,12 @@ int main()
 
     measures::time t(5.0);
     //dimensionally incorrect!
-    measures::length len4 = len1 * t;
+    //measures::length len4 = len1 * t;
 
     measures::speed v = len2 / t;
 
     //Impossible to tell!
-    measures::energy KE = 0.5 * 10 * v * v;
+    measures::energy KE = 0.5 * measures::mass(10) * v * v;
 
     std::cout << "KE = " << KE.val << std::endl;
     
