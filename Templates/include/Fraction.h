@@ -12,6 +12,8 @@ class Fraction
     Fraction Add(Fraction other);
 
     std::string toString() const;
+    Fraction operator* (Fraction y);
+    Fraction operator+ (Fraction y);
 
     private:
 

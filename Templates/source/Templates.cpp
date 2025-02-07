@@ -14,5 +14,14 @@ int main()
     std::cout << quad_double << std::endl;
     std::cout << d_quad << std::endl;
 
+    Fraction a(1, 2);  
+    Fraction b(3, 4);  
+    Fraction c(2, 3);  
+    Fraction x(5, 10); 
+
+    Fraction quad_fraction = quadratic(a, b, c, x);
+    
+    std::cout << "Quadratic result (Fraction): " << quad_fraction << std::endl;
+
     return 0;
 }

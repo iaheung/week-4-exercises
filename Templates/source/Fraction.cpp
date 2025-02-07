@@ -49,3 +49,13 @@ std::ostream& operator<<(std::ostream &out, const Fraction &f)
     out << f.toString();
     return out;
 }
+
+Fraction Fraction::operator* (Fraction y)
+    {
+        return Fraction(numerator * y.numerator, denominator * y.denominator);
+    }
+
+Fraction Fraction::operator+ (Fraction y)
+{
+    return Fraction(numerator + y.numerator, denominator + y.denominator);
+}
